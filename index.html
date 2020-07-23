@@ -9,33 +9,36 @@
     <body>
         <h1>Calculator</h1>
         <div id="calculator">
-            <h2 id="result-con"><span id="result">0</span></h2>
+            <h2 id="result-con">
+                <span data-previous-operand id="previous"></span>
+                <span data-current-operand id="current"></span>
+            </h2>
             <div class="row">
-                <button class="operation" id="add">+</button>
-                <button class="operation" id="minus">-</button>
-                <button class="operation" id="multiply">&#xD7</button>
-                <button class="operation" id="divide">&#247;</button>
+                <button data-operation class="operation" id="add">+</button>
+                <button data-operation class="operation" id="minus">-</button>
+                <button data-operation class="operation" id="multiply">*</button>
+                <button data-operation class="operation" id="divide">÷</button>
             </div>
-            <button id="equal">=</button>
+            <button data-equals id="equal">=</button>
             <div class="row">
-                <button id="seven">7</button>
-                <button id="eight">8</button>
-                <button id="nine">9</button>
-            </div>
-            <div class="row">
-                <button id="four">4</button>
-                <button id="five">5</button>
-                <button id="six">6</button>
+                <button data-number id="seven">7</button>
+                <button data-number id="eight">8</button>
+                <button data-number id="nine">9</button>
             </div>
             <div class="row">
-                <button id="one">1</button>
-                <button id="two">2</button>
-                <button id="three">3</button>
+                <button data-number id="four">4</button>
+                <button data-number id="five">5</button>
+                <button data-number id="six">6</button>
             </div>
             <div class="row">
-                <button id="zero">0</button>
-                <button id="point">.</button>
-                <button id="reset">c</button>
+                <button data-number id="one">1</button>
+                <button data-number id="two">2</button>
+                <button data-number id="three">3</button>
+            </div>
+            <div class="row">
+                <button data-number id="zero">0</button>
+                <button data-number id="point">.</button>
+                <button data-all-clear id="reset">c</button>
             </div>
         </div>
     </body>
